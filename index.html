@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Currículo e portfólio interativo de um estudante de tecnologia"
+    />
+    <title>Meu Currículo | Portfólio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="navegacao container" aria-label="Navegação principal">
+        <a class="logo" href="#inicio">&lt;Meu <span> Currículo </span>/&gt;</a>
+        <button
+          id="botao-menu"
+          class="botao-menu"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <div id="menu" class="menu">
+          <a href="#inicio" class="ativo">Início</a
+          ><a href="#sobre">Sobre mim</a
+          ><a href="#trajetoria">Linha do tempo</a>
+          <a href="#habilidades">Habilidades</a><a href="#projetos">Projetos</a
+          ><a href="#contato">Contato</a>
+          <button id="botao-tema" class="botao-tema" aria-label="Alternar tema">
+            🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container hero-conteudo revelar">
+          <img  src="img/images.jpeg" 
+            alt="Avatar neutro do aluno"
+            class="foto-perfil"
+          />
+          <p class="saudacao">Olá, eu sou</p>
+          <h1 id="nome-hero">Tallis Rafael</h1>
+          <p id="texto-digitacao" class="cargo" aria-live="polite"></p>
+          <p id="descricao-hero" class="hero-descricao">
+            Estudante iniciante na area de tecnologia, apaixonado por jogos e internet. cursando Desenvolvimento de sistema.
+          </p>
+          <div class="acoes">
+            <a href="#trajetoria" class="botao primario"
+              >Conheça minha trajetória</a
+            ><a href="#projetos" class="botao secundario">Ver projetos</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="secao">
+        <div class="container revelar">
+          <p class="rotulo">QUEM SOU</p>
+          <h2>Sobre mim</h2>
+          <div class="sobre-grid">
+            <div>
+              <p id="descricao-sobre" class="texto-grande">
+                Estou dando meus primeiros passos no desenvolvimento web. Gosto
+                de aprender na prática, resolver problemas e criar projetos que
+                façam diferença.
+              </p>
+              <button id="editar-dados" class="botao primario">
+                ✏️ Editar informações
+              </button>
+            </div>
+            <div class="info-grid">
+              <article class="info-card">
+                <span>📍</span><small>Cidade</small
+                ><strong id="info-cidade">Juiz De Fora - MG/strong>
+              </article>
+              <article class="info-card">
+                <span>🎂</span><small>Idade</small><strong>17 anos </strong>
+              </article>
+              <article class="info-card">
+                <span>🎓</span><small>Curso</small
+                ><strong id="info-curso">Desenvolvimento Web</strong>
+              </article>
+              <article class="info-card">
+                <span>🎯</span><small>Objetivo</small
+                ><strong id="info-objetivo"
+                  >Primeira oportunidade em tecnologia</strong
+                >
+              </article>
+              <article class="info-card">
+                <span>🗓️</span><small>Disponibilidade</small
+                ><strong>Estágio</strong>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="trajetoria" class="secao fundo-alternativo">
+        <div class="container revelar">
+          <p class="rotulo">MINHA EVOLUÇÃO</p>
+          <h2>Linha do tempo</h2>
+          <p class="subtitulo">Cada passo dado, significa metade do caminho bem sucedido.</p>
+          <div id="linha-do-tempo" class="linha-do-tempo"></div>
+          <form id="form-trajetoria" class="form-inline card">
+            <h3>Adicionar conquista</h3>
+            <input name="periodo" placeholder="Ano ou período" required /><input
+              name="titulo"
+              placeholder="Título"
+              required
+            /><input name="descricao" placeholder="Descrição" required /><button
+              class="botao primario"
+              type="submit"
+            >
+              + Adicionar
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section id="habilidades" class="secao">
+        <div class="container revelar">
+          <p class="rotulo">O QUE ESTOU APRENDENDO</p>
+          <h2>Minhas qualidades em empresas</h2>
+          <div id="filtros-habilidades" class="filtros">
+            <button class="ativo" data-filtro="todas">Todas</button
+            ><button data-filtro="tecnologia">Tecnologia</button
+            ><button data-filtro="pessoal">Pessoal</button>
+          </div>
+          <div id="lista-habilidades" class="habilidades-grid"></div>
+        </div>
+      </section>
+
+      <section id="projetos" class="secao fundo-alternativo">
+        <div class="container revelar">
+          <p class="rotulo">PRÁTICA E CRIATIVIDADE</p>
+          <h2>Projetos desenvolvidos</h2>
+          <div id="filtros-projetos" class="filtros">
+            <button class="ativo" data-filtro="todos">Todos</button
+            ><button data-filtro="HTML">HTML</button
+            ><button data-filtro="CSS">CSS</button
+            ><button data-filtro="JavaScript">JavaScript</button>
+          </div>
+          <div id="lista-projetos" class="projetos-grid"></div>
+        </div>
+      </section>
+
+      <section id="contato" class="secao contato">
+        <div class="container revelar">
+          <p class="rotulo">VAMOS CONVERSAR</p>
+          <h2>Entre em contato</h2>
+          <div class="contato-grid">
+            <div class="contato-info">
+              <h3>Estou disponível para novas oportunidades!</h3>
+              <p>
+                Você pode me encontrar enviando uma mensagem.
+              </p>
+              <p>✉️ tallisr9##gmail.com</p>
+              <p>📱 (##) 991037113</p>
+              <p>📍 <span id="contato-cidade"> Juiz de fora - MG</span></p>
+              <p>
+                <a href="https://github.com/" target="_blank" rel="noopener"
+                  >GitHub ↗</a
+                >
+                ·
+                <a href="https://linkedin.com/" target="_blank" rel="noopener"
+                  >LinkedIn ↗</a
+                >
+              </p>
+            </div>
+            <form id="form-contato" class="card">
+              <label>Nome<input name="nome" required /></label
+              ><label>E-mail<input name="email" type="email" required /></label
+              ><label>Assunto<input name="assunto" required /></label
+              ><label
+                >Mensagem<textarea
+                  name="mensagem"
+                  rows="5"
+                  required
+                ></textarea></label
+              ><button class="botao primario" type="submit">
+                Enviar mensagem
+              </button>
+              <p id="mensagem-form" class="mensagem-form" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container rodape">
+        <div>
+          <strong id="nome-rodape">Tallis Rafael</strong>
+          <p>
+            © <span id="ano-atual"></span> · Feito com HTML, CSS e JavaScript.
+          </p>
+        </div>
+        <div>
+          <a href="#inicio">Início</a> <a href="#projetos">Projetos</a>
+          <a href="https://github.com/" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+          <a href="https://linkedin.com/" target="_blank" rel="noopener"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+    <button id="voltar-topo" aria-label="Voltar ao topo">↑</button>
+
+    <div id="modal-dados" class="modal" aria-hidden="true">
+      <div class="modal-conteudo">
+        <button class="fechar-modal" aria-label="Fechar">×</button>
+        <h2>Editar informações</h2>
+        <form id="form-dados">
+          <label>Nome<input name="nome" required /></label
+          ><label>Cargo<input name="cargo" required /></label
+          ><label>Cidade<input name="cidade" required /></label
+          ><label>Curso<input name="curso" required /></label
+          ><label>Objetivo<input name="objetivo" required /></label
+          ><label
+            >Descrição<textarea
+              name="descricao"
+              rows="4"
+              required
+            ></textarea></label
+          ><button class="botao primario" type="submit">
+            Salvar alterações
+          </button>
+        </form>
+      </div>
+    </div>
+    <div id="modal-projeto" class="modal" aria-hidden="true">
+      <div class="modal-conteudo">
+        <button class="fechar-modal" aria-label="Fechar">×</button>
+        <div id="detalhes-projeto"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
