@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#dbeafe" />
+  <rect x="120" y="48" width="400" height="304" rx="25" fill="white" />
+  <text
+    x="170"
+    y="105"
+    font-family="Arial"
+    font-weight="bold"
+    font-size="29"
+    fill="#172033"
+  >
+    MINHAS TAREFAS
+  </text>
+  <g fill="none" stroke="#2563eb" stroke-width="8">
+    <path d="M175 162l14 14 27-33M175 232l14 14 27-33" />
+  </g>
+  <g stroke="#94a3b8" stroke-width="10" stroke-linecap="round">
+    <path d="M240 162h190M240 232h150M175 298h250" />
+  </g>
+</svg>

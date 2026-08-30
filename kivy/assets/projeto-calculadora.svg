@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#e0e7ff" />
+  <rect x="215" y="35" width="210" height="330" rx="25" fill="#172033" />
+  <rect x="240" y="65" width="160" height="65" rx="8" fill="#334155" />
+  <text
+    x="380"
+    y="112"
+    text-anchor="end"
+    font-family="Arial"
+    font-size="40"
+    fill="white"
+  >
+    42
+  </text>
+  <g fill="#475569">
+    <circle cx="265" cy="170" r="22" />
+    <circle cx="320" cy="170" r="22" />
+    <circle cx="375" cy="170" r="22" />
+    <circle cx="265" cy="225" r="22" />
+    <circle cx="320" cy="225" r="22" />
+    <circle cx="375" cy="225" r="22" />
+    <circle cx="265" cy="280" r="22" />
+    <circle cx="320" cy="280" r="22" />
+  </g>
+  <circle cx="375" cy="280" r="22" fill="#6d28d9" />
+  <rect x="245" y="320" width="150" height="22" rx="11" fill="#2563eb" />
+</svg>
